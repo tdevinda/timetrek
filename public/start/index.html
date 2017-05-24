@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to TimeTrek! </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="content/script.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="content/base.css" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Roboto', sans-serif;
+				padding: 3%;
+			}
+
+			h2 {
+				margin-left: 5%;
+			}
+
+			.logo {
+				margin-top: 5%;
+			}
+			.footer {
+				text-align: center;
+				font-size: large;
+				margin-top: 1%;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	<div id="cover">You will be logged in soon...</div>
+	<center><img class="logo" src="content/logo.png" width="60%"/></center>
+	<div id="unhold">You will be logged in shortly...</div>
+	<h2>So you want to travel time and explore history?</h2>
+	<p>Let's explore what time has moved with its invisible hands and inevitable properties. Of course there are
+	<a href="rules">rules</a> that apply. Make sure you agree with them. History is something that we are excited about, and we think
+	you are interested about it too.</p>
+
+	<p>But before we work the time machine, we need to set it's core wiring current to a <span id="volts">certain value</span>. Acivate selected power generators and power it up.</p>
+	
+	<center>
+	<input type="checkbox" class="voltage" id="c1"/> Generator 8
+	<input type="checkbox" class="voltage" id="c2"/> Generator 7
+	<input type="checkbox" class="voltage" id="c3"/> Generator 6
+	<input type="checkbox" class="voltage" id="c4"/> Generator 5
+	<input type="checkbox" class="voltage" id="c5"/> Generator 4
+	<input type="checkbox" class="voltage" id="c6"/> Generator 3
+	<input type="checkbox" class="voltage" id="c7"/> Generator 2
+	<input type="checkbox" class="voltage" id="c8"/> Generator 1
+
+	</center>
+	<br/>
+
+	
+	<div class="calibration"><img src="content/arrow.png" /></div>
+	<hr/>
+	<div class="pointer"><img src="content/arrow.png" style="transform: rotate(180deg);" /></div>
+	
+	<center><button id="power">Power UP</button>
+	
+	<div id="controllers"></div>
+	<center><div id="tmpart"></div></center>
+	<center><div style="font-size: small;">Collect all of the time machine parts like this one (including this one) scattered around different timeframes. You will need these to
+		build the portal to return to this day once you have ventured to far off times</div></center>
+
+	<div style="text-align:center; padding-top: 8%">
+		<a href="https://twitter.com/timetr3k"><img src="content/twitter-128.png" width="48px" /></a><br/>
+		<a href="rules">Rules</a>
+	</div>
+
+	</body>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-75655731-5', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+	<script type="text/javascript" src="../content/fbase.js"></script> 
+	<script src="content/app.min.js"></script>
+
+</html>

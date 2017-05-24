@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Kingdom of Dambadeniya</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+
+    <style media="screen">
+      .row{
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+    </style>
+
+</head>
+
+<body>
+  <div id="cover">You will be logged in soon...</div>
+  <div id="unhold"></div>
+<div class="container">
+
+
+  <div class="jumbotron" style="text-align:center;z-index: -1;">
+    <p class="lead">Where kings walked</p>
+
+      <h1 class="h1-responsive">MALIGA GALA</h1>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <p style="text-align:justify">The invasion of "Kalinga Magha", the cruel Hindu dictator started in 1215 A.D. The invasion lead to a mass distruction of Buddhist
+      temples, literature and mass murder of people in Sri Lanka. Since the "Magha" troops were ruling most of the North side of the island,
+      the rest of the sinhalease people were forced to retreat to the south-west. Dambadeniya kingdom was established in a result of this.
+      King Vijayabahu III (1215-1236 AD) was one of the popular provincial leaders who made Dambadeniya his kingdom.
+      <br/><br/>
+      The elder son of King Vijayabahu III, Parakramabahu II (1236-1270) went to rule the Dambadeniya kingdom after his father. It is said
+      that the young prince was a great warrior and showing talents in many areas like literature and law. He was awarded an honour of literature
+      for his creation of "Kavsilumina", a book of poems. The king defeated the evil ruler "Magha" and took over the country
+      in to his hands. He then went on repairing the damage caused by "Magha" and establishing Buddhist temples and Stupas.
+    </p>
+    </div>
+    <div class="col-md-6">
+      <div class="view overlay hm-white-light z-depth-1-half">
+          <div id="map"  style="height: 500px">
+          
+          </div>
+          <div class="mask">
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+        <!--Featured image -->
+        <div class="view overlay hm-white-light z-depth-1-half">
+            <img src="img/stairway.jpg" class="img-fluid " alt="">
+            <div class="mask">
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!--Main information-->
+    <div class="col-lg-6">
+        <h2 class="h2-responsive">Maliga Gala - The Rock of the Palaces</h2>
+        <hr>
+        <p style="text-align:justify">During the days of the Dambadeniya kingdom, the kings used "Maliga Gala", a 600 ft tall rock as the ground
+          for thier palaces. It's situated near the "Raja Maha Viharaya" temple and the ruins of the ponds and other buildings can be
+          seen all around the place.
+        The rock stair case, mid garden of the palace, Rathmal pond, cloud wall, Mawee pond and the great tunnel are some places that
+          you should visit while visiting Dambadeniya.
+        </p>
+        <a class="btn btn-primary waves-effect waves-light" id="showmore">Learn More</a>
+        <div id="landing" style="display: none;"></div>
+    </div>
+</div>
+
+</div>
+<!-- <div id="map" class="img-fluid" style="width: 100%;height: 300px;z-index: 100">new map location</div> -->
+<center><div id="landnig"></div></center>
+<footer class="page-footer center-on-small-only primary-color-dark">
+
+  <center><div id="tmpart"></div></center>    
+  <div class="call-to-action">
+      <img src="img\logo.png" alt="" style="width:20%">
+      <br/>
+      <img src="img\twitter-128.png" alt="" style="width:4%">
+      <p><a href="https://timetrek.gdgsrilanka.org">Rules</a></p>
+  </div>
+
+  <div class="footer-copyright">
+      <div class="container-fluid">
+          <p>Photo credits to <a href="http://www.traveljournals.net/">traveljournals.net</a></p>
+
+      </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75655731-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script src="../content/fbase.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+<script>
+  function initMap() {
+
+    var maligagala = {lat: 7.363352, lng: 80.155227};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: maligagala
+    });
+    var marker = new google.maps.Marker({
+      position: maligagala,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHfRnjkKByNlYtaQ8Rt2dNql8jrsLSk58&callback=initMap">
+</script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wijayanthi Prasada - Polonnaruwa Era</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/stylish-portfolio.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="cover">You will be logged in soon</div>
+    <div id="unhold"></div>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Wijayanthi Prasada</a>
+            </li>
+            <li>
+                <a href="https://timetrek.gdgsrilanka.org/rules/" onclick=$("#menu-close").click();>Rules</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 style="text-shadow: 3px 3px black">7 stories, 1000 rooms</h1>
+            <h3>An architectural wonder of the era, elaborates the technological advancements of aincient Sri Lanka</h3>
+            <br>
+            <a id="showmore" class="btn btn-dark btn-lg">Find Out More</a>
+            <div id="landing" style="display: none;"></div>
+        </div>
+    </header>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Wijayanthi Prasada was built as two stages.</h2>
+                    <p class="lead">The lower part of the building is built using brick and mortar while the upper storeys were reportedly wood. But with time, the wood
+					has eroded away, leaving the support structure intact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>The name Wijayanthi Prasada was inspired by the god Indra</h1>
+        </div>
+    </aside>
+	
+	<section id="desc" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Built for a king who was godlike</h2>
+                    <p class="lead">During the Polonnaruwa era, King Parakramabahu the first, or Parakramabahu the great was a king which was regarded 
+					to be one of the best to appear in ages. A status which the great king holds to-date.</p>
+					<p class="lead">The citadel which contains the Prasada is actually a construction by king Vijayabahu. But it was later destroyed by invaders.
+					It was king Parakramabahu the first who built this building in the citadel along with a collection of other grand buildings and parks.</p>
+					
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center><div id="landnig"></div></center>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <center><div id="tmpart"></div></center>
+                    <h4><img src="img/logo.png" width="30%" />
+                    </h4>
+                    
+                    <br>
+                    <ul class="list-inline">
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        
+                    </ul>
+                    <hr class="small">
+                    <p>Photo copyright to <a href="https://members.nationalgeographic.com/170112323439/">Muditha Meegahakumbura</a>
+                    <a href="https://commons.wikimedia.org/w/index.php?curid=1003914">Jolle~commonswiki</a></p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75655731-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script src="../content/fbase.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+
+</body>
+
+</html>

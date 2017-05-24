@@ -1,0 +1,26 @@
+{
+    "name": "gdgsrilanka/tim",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milindu Sanoj Kumarage",
+            "email": "agentmilindu@gmail.com"
+
+        },
+        {
+            "name": "Tharaka Devinda",
+            "email": "tdevinda@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "povils/figlet": "dev-master",
+        "picqer/php-barcode-generator": "^0.2.1",
+        "endroid/qrcode": "^1.9"
+
+    },
+    "autoload": {
+      "psr-4": { "GDGSriLanka\\TimeTreck\\" : "."}
+    }
+}

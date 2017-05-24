@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to TimeTrek! </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		
+		<style>
+			body {
+				font-family: 'Roboto', sans-serif;
+				padding: 3%;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			.logo {
+				margin-top: 5%;
+			}
+			.footer {
+				text-align: center;
+				font-size: large;
+				margin-top: 1%;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	
+	<center><img class="logo" src="content/logo.png" width="60%"/></center>
+	
+	<h2>TimeTrek is no longer an active quiz. This webpage serves as a learning material</h2>
+	<h2>Welcome to TimeTrek. Before you begin, you need to read this.</h2>
+
+	<p>TimeTrek was an independent quiz created by GDG Sri Lanka. It allowed participants to get a ticket to Google I/O extended Sri Lanka 2017, given that they managed to win this game.</p>
+
+	<p>If you start to solve the clues, you need to agree to the <a href="https://timetrek.gdgsrilanka.org/rules/">Code of Conduct</a> after reading it. Your behavior inside this site and it's pages will be tracked, analyzed and be used for ticket verification and any other purpose seen fit by GDG Sri Lanka. Your session information will be tracked, stored and processed using Cookies and any  other method necessary. Information you provide; email address, name and other properties will be stored in our database and be used to lay out clues as well as any other purpose seen fit by GDG Sri Lanka.</p>
+	<br/>
+	<center>
+		<input type="checkbox" value="iagree" id="iagree" /> I agree to the code of conduct displayed in <a href="https://timetrek.gdgsrilanka.org/rules/">https://timetrek.gdgsrilanka.org/rules/</a>
+		<br/>
+		<button id="go" class="navigate">Login and Play</button>
+	</center>
+	
+	<div style="text-align:center; padding-top: 8%">
+		<a href="https://twitter.com/timetr3k"><img src="content/twitter-128.png" width="48px" /></a><br/>
+		<a href="rules">Rules</a>
+	</div>
+
+	</body>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-75655731-5', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script type="text/javascript">
+	$("document").ready(function() {
+		$("#go").click(function() {
+			if($("#iagree").is(":checked")) {
+				window.location = "https://timetrek.gdgsrilanka.org/start/";
+			}
+			else {
+				alert("You have to agree to the terms and conditions to proceed");
+			}
+		});
+		
+	});
+	</script>
+	
+
+</html>
