@@ -38,8 +38,8 @@ function getPortal(email,path,hash) {
 
 	$.ajax({
 		type: "post",
-		// url: "https://io-2017-timetrek.appspot.com/bricks",
-		url: "http://localhost:8090/bricks",
+		url: "https://io-2017-timetrek.appspot.com/bricks",
+		// url: "http://localhost:8090/bricks",
 		data: "e="+ email + "&p="+ path + "&a="+ hash,
 		dataType: "json",
 		success: function(data) {

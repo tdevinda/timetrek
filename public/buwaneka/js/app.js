@@ -43,8 +43,8 @@ function fetch(email, path, hash) {
 	// alert(email+ " "+ pathchanged + " "+ hash);
 	$.ajax({
 		type: "post",
-		// url: "https://io-2017-timetrek.appspot.com",
-		url: "http://localhost:8090",
+		url: "https://io-2017-timetrek.appspot.com",
+		// url: "http://localhost:8090",
 		data: "e="+ email + "&p="+ pathchanged + "&a="+ hash,
 		dataType: "json",
 		success: function(data) {
